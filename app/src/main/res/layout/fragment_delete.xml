@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.deleteFragment">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@color/brightTurquoise"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="45dp"
+                app:layout_constraintTop_toBottomOf="@+id/text">>
+                <EditText
+                    android:id="@+id/editTitle"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Title"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.8"
+                    tools:ignore="Suspicious0dp" />
+                <Button
+                    android:id="@+id/removeitem"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:text="Remove"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:layout_constraintWidth_percent="0.4"
+                    app:shapeAppearanceOverlay="@style/Button" />
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:layout_constraintWidth_percent="0.4"
+                    app:shapeAppearanceOverlay="@style/Button" />
+            </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MyAcountFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="My Details"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="18dp"
+        android:background="@color/brightTurquoise"
+        android:textColor="@color/white"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/person_logo"
+        android:drawablePadding="10dp"
+        android:textColor="#676767"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/job_logo"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="18dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#676767"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <TextView
+        android:id="@+id/calender"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="10dp"
+        android:textColor="#676767"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/job"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:textColor="#676767"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/icon_gender"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="18dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calender"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

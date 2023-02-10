@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.ElecronicsActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Electronics product"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@color/brightTurquoise"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="18dp"
+
+            >
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchElectro"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/searchs_view"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search Store">
+            </androidx.appcompat.widget.SearchView>
+
+            <Button
+                android:id="@+id/elecsca"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/brightTurquoise"
+                android:gravity="center"
+                android:onClick="scan_qr"
+                app:icon="@drawable/icon_scan"
+                app:iconGravity="textStart"
+                app:iconPadding="4dp" />
+
+            <Button
+                android:id="@+id/elctvoice"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="40dp"
+                android:onClick="searchvoice"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/brightTurquoise"
+                android:gravity="center"
+                app:icon="@drawable/icon_voice"
+                app:iconGravity="textStart"
+                app:iconPadding="4dp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/electroproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
